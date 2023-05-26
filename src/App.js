@@ -9,9 +9,9 @@ function App() {
 
 return (
   <div className="App">
-  <Header />
- 
+  
   <Router>
+    <Header />
     <Routes>
         <Route exact path="/" element={<ProductListing />} />
         <Route exact path="/product/productId" element={<ProductDetail />} />
