@@ -1,14 +1,13 @@
 import "./App.css";
 import Header from "./container/header";
 import {BrowserRouter as Router  , Route  , Routes} from 'react-router-dom'
-import ProductComponents from "./container/productComponents";
 import ProductListing from "./container/productListing";
 import ProductDetail from "./container/productDetail";
 function App() { 
 
 
 return (
-  <div className="App">
+  <div className="px-100">
   
   <Router>
     <Header />
