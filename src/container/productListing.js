@@ -9,7 +9,9 @@ const ProductListing = () => {
     const dispatch = useDispatch()
 
     const fetchProducts = async () => {
-        const response = await axios.get("http://younesdzdev.pythonanywhere.com/rest/viewsets/Product/?format=json").catch((err)=> {
+
+                                             
+        const response = await axios.get('http://younesdzdev.pythonanywhere.com/rest/viewsets/Product/?format=json').catch((err)=> {
             console.log("err"+ err)
         })
         dispatch(setProducts(response.data))
